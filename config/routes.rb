@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
-  
+
   root 'pages#home'
 
   get "gallery" => "pages#gallery", as: :gallery
-  get "contact" => "pages#contact", as: :contact
   get "admin" => "pages#admin", as: :admin
   
   # The priority is based upon order of creation: first created -> highest priority.

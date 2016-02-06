@@ -5,10 +5,18 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+  <body>
+    </div class="page-header">
+      <h1 class="header">RISE & ORGANIZE</h1>
+    </div>
 
-<%= yield %>
+    <%= render 'partials/navbar' %> 
 
-</body>
+    <div class="container">
+      <%= yield %>
+    </div>
+
+  </body>
 </html>
